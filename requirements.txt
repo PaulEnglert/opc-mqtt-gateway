@@ -1,0 +1,9 @@
+enum34==1.1.6
+futures==3.2.0
+lxml==4.3.3
+opcua==0.98.7
+paho-mqtt==1.4.0
+python-dateutil==2.8.0
+pytz==2019.1
+six==1.12.0
+trollius==2.2
