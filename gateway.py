@@ -513,7 +513,7 @@ class Gateway():
         def handler(update):
             try:
                 self.route_update(update)
-            except Exception as e:
+            except (Exception, IOError, RuntimeError) as e:
                 Logger.error('Failed routing update: {}'.format(e))
         opc_client.add_notification_handler(handler)
 
