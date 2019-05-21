@@ -15,3 +15,14 @@ python2.7
 docker
 
     docker run -it paulenglert/opc-mqtt-gateway:latest -h
+
+
+Example:
+
+
+    python gateway.py \
+      --opc-host 'opcuaserver.com' --opc-port 48484 \
+      --mqtt-host 'test.mosquitto.org' --mqtt-topic-prefix '/idatase' \
+      --proxy-uri 'urn:unconfigured:application:Countries.AR.CENTENARIO.Temperature' \
+      --proxy-uri 'urn:unconfigured:application:Countries.AR.CENTENARIO.WindSpeed' \
+      --proxy-uri 'urn:unconfigured:application:Countries.AR.CENTENARIO.WindBearing'
